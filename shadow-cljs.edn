@@ -1,0 +1,17 @@
+{:source-paths
+ ["src"]
+
+ :dependencies
+ [[lilactown/hx "0.5.3"]]
+
+ :dev-http {8000 "public"}
+
+ :builds
+ {:app
+  {:target :browser
+   :devtools {:loader-mode :eval}
+   :asset-path "js"
+   :module-loader true
+   :modules
+   {:main
+    {:init-fn main.demo.app/init}}}}}

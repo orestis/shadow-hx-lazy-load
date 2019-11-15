@@ -14,4 +14,8 @@
    :module-loader true
    :modules
    {:main
-    {:init-fn main.demo.app/init}}}}}
+    {:init-fn main.demo.app/init}
+
+    :sample
+    {:entries [main.demo.components.sample]
+     :depends-on #{:main}}}}}}
